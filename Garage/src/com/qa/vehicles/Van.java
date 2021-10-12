@@ -3,7 +3,7 @@ package com.qa.vehicles;
 public class Van extends Vehicle {
 
 	private int tyres;
-	private String vehType = "Van";
+	private String vehType;
 	private String vanType;
 	public Van(int id, float engineSize, String paintColour, String model, int tyres, String vehType, String vanType) {
 		super(id, engineSize, paintColour, model);
