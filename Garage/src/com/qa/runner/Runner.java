@@ -19,9 +19,12 @@ public class Runner {
 		newgarage.addVehicle(fiat);
 		newgarage.addVehicle(merc);
 //		newgarage.clearVehicle(Car.class);
-		newgarage.costGetter();
+		newgarage.getBills();
 		newgarage.clearVehicleByID(1);
-		newgarage.costGetter();
+		newgarage.getBills();
+		newgarage.getBill(3);
+		fiat.setEngineSize(1.6f);
+		newgarage.getBill(2);
 	}
 
 }

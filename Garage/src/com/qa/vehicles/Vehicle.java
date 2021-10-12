@@ -1,7 +1,7 @@
 package com.qa.vehicles;
 
 public abstract class Vehicle {
-	
+	protected int costMult;
 	private int id;
 	private float engineSize;
 	private String paintColour;
@@ -13,6 +13,13 @@ public abstract class Vehicle {
 		this.paintColour = paintColour;
 		this.model = model;
 	}
+	
+	
+		
+	public  void getBill() {
+		System.out.println(engineSize * costMult);
+	}
+	
 	public int getId() {
 		return id;
 	}

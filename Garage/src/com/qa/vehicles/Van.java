@@ -10,6 +10,7 @@ public class Van extends Vehicle {
 		this.tyres = tyres;
 		this.vehType = vehType;
 		this.vanType = vanType;
+		this.costMult = 600;
 	}
 	public int getTyres() {
 		return tyres;

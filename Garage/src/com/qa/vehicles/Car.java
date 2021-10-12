@@ -2,6 +2,7 @@ package com.qa.vehicles;
 
 public class Car extends Vehicle{
 
+	
 	private int tyres;
 	private String vehType;
 	private int numDoors;
@@ -10,6 +11,7 @@ public class Car extends Vehicle{
 		this.tyres = tyres;
 		this.vehType = vehType;
 		this.numDoors = numDoors;
+		this.costMult = 400;
 	}
 	public int getTyres() {
 		return tyres;
@@ -35,6 +37,7 @@ public class Car extends Vehicle{
 	public String toString() {
 		return "Car [tyres=" + tyres + ", vehType=" + vehType + ", numDoors=" + numDoors + "]";
 	}
+	
 	
 	
 	

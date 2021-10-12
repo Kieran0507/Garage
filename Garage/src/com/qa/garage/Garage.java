@@ -15,20 +15,10 @@ public class Garage {
 		garage.add(0, veh);
 	}
 
-	public void costGetter() {
+	public void getBills() {
 		for (int i = 0; i < garage.size(); i++) {
 			Vehicle vehicle = garage.get(i);
-			if (vehicle instanceof Car) {
-				System.out.println(vehicle.getEngineSize() * 400);
-
-			} else if (vehicle instanceof Van) {
-				System.out.println(vehicle.getEngineSize() * 600);
-
-			} else if (vehicle instanceof Motorbike) {
-				System.out.println(vehicle.getEngineSize() * 150);
-			} else {
-				System.out.println("Unknown vehicle type");
-			}
+			vehicle.getBill();
 		}
 	}
 
@@ -80,22 +70,12 @@ public class Garage {
 		for (int i = 0; i < garage.size(); i++) {
 			if (garage.get(i).getId() == id) {
 				Vehicle vehicle = garage.get(i);
-				if (vehicle instanceof Car) {
-					System.out.println(vehicle.getEngineSize() * 400);
-
-				} else if (vehicle instanceof Van) {
-					System.out.println(vehicle.getEngineSize() * 600);
-
-				} else if (vehicle instanceof Motorbike) {
-					System.out.println(vehicle.getEngineSize() * 150);
-				} else {
-					System.out.println("Unknown vehicle type");
-				}
-			}else {
-				System.out.println("ID does not exist");
+				vehicle.getBill();
+				return;
 			}
+			
 
-		} 
+		} System.out.println("ID does not exist");
 			
 		
 	}
