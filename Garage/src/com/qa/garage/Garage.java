@@ -66,12 +66,7 @@ public class Garage {
 //        }
 //    }
 //}
-	
-	
-	
-	
-	
-	
+
 	public void clearVehicleByID(int id) {
 		for (int i = 0; i < garage.size(); i++) {
 			if (garage.get(i).getId() == id) {
@@ -96,13 +91,16 @@ public class Garage {
 				} else {
 					System.out.println("Unknown vehicle type");
 				}
+			}else {
+				System.out.println("ID does not exist");
 			}
-				
-			}
-		}
+
+		} 
+			
+		
+	}
+
 	public void clearGarage() {
 		garage.clear();
 	}
-	}
-
-
+}

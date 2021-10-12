@@ -15,10 +15,10 @@ public class Runner {
 		
 		newgarage.addVehicle(fiat);
 		newgarage.addVehicle(merc);
-		newgarage.clearVehicle(Car.class);
+//		newgarage.clearVehicle(Car.class);
 		newgarage.costGetter();
-//		newgarage.clearVehicleByID(1);
-//		newgarage.costGetter();
+		newgarage.clearVehicleByID(1);
+		newgarage.costGetter();
 	}
 
 }
