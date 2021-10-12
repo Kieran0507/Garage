@@ -16,9 +16,9 @@ public abstract class Vehicle {
 	
 	
 		
-	public  void getBill() {
-		System.out.println(engineSize * costMult);
-	}
+	public abstract void getBill();
+		
+	
 	
 	public int getId() {
 		return id;

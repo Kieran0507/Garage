@@ -34,6 +34,11 @@ public class Van extends Vehicle {
 	public String toString() {
 		return "Van [tyres=" + tyres + ", vehType=" + vehType + ", vanType=" + vanType + "]";
 	}
+	@Override
+	public void getBill() {
+		System.out.println((tyres * costMult) + 150);
+		
+	}
 	
 	
 

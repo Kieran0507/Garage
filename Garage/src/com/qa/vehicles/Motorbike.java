@@ -2,7 +2,7 @@ package com.qa.vehicles;
 
 public class Motorbike extends Vehicle {
 
-	private int tyres = 2;
+	private int tyres;
 	public Motorbike(int id, float engineSize, String paintColour, String model, int tyres) {
 		super(id, engineSize, paintColour, model);
 		this.tyres = tyres;
@@ -17,6 +17,11 @@ public class Motorbike extends Vehicle {
 	@Override
 	public String toString() {
 		return "Motorbike [tyres=" + tyres + "]";
+	}
+	@Override
+	public void getBill() {
+		System.out.println(tyres * costMult);
+		
 	}
 	
 	
