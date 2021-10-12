@@ -66,7 +66,7 @@ public class Garage {
 		}
 	}
 
-	public void getBill(int id) {
+	public void getBillByID(int id) {
 		for (int i = 0; i < garage.size(); i++) {
 			if (garage.get(i).getId() == id) {
 				Vehicle vehicle = garage.get(i);

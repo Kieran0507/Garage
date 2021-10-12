@@ -22,9 +22,9 @@ public class Runner {
 		newgarage.getBills();
 		newgarage.clearVehicleByID(1);
 		newgarage.getBills();
-		newgarage.getBill(3);
+		newgarage.getBillByID(3);
 		fiat.setEngineSize(1.6f);
-		newgarage.getBill(2);
+		newgarage.getBillByID(2);
 	}
 
 }
