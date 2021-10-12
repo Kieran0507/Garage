@@ -58,7 +58,7 @@ public class Garage {
 			}
 		}
 	}
-// Not my code Removes 2 methods
+// remove vehicle by type? not my code
 //	public <T> void clearVehicle(Class<T> vehicleType) {
 //        for(int i = 0; i < garage.size(); i++){
 //        	if (garage.get(i).getClass() .equals  (vehicleType)){
